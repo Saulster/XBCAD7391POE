@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.1184077">
+  <PropertyGroup>
+    <StartupCommand>npm run dev</StartupCommand>
+    <StartupCommandWorkingDirectory>..\frontend</StartupCommandWorkingDirectory>
+    <JavaScriptTestRoot>..\frontend\src\app</JavaScriptTestRoot>
+    <ShouldRunBuildScript>false</ShouldRunBuildScript>
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\dist</BuildOutputFolder>
+    <BuildCommand>npm run build</BuildCommand>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="NewFolder\**" />
+    <None Remove="src\app\BulkCheckReport\**" />
+    <None Remove="src\app\BulkStudentCheck\**" />
+    <TypeScriptConfiguration Remove="NewFolder\**" />
+    <TypeScriptConfiguration Remove="src\app\BulkCheckReport\**" />
+    <TypeScriptConfiguration Remove="src\app\BulkStudentCheck\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\components\InactivityPopup.js" />
+    <None Remove="src\components\InactivityPopup.module.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\app\Login\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\app\globals.css" />
+    <Content Include="src\components\Header.js" />
+    <Content Include="src\components\Header.module.css" />
+    <Content Include="src\components\SearchBar.js" />
+    <Content Include="src\components\SearchBar.module.css" />
+    <Content Include="src\public\feenix-logo.png" />
+    <Folder Include="src\app\SingleStudentCheck\" />
+  </ItemGroup>
+</Project>

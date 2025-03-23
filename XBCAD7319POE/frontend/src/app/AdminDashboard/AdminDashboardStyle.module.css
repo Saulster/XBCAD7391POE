@@ -1,0 +1,164 @@
+/* styles/AdminDashboardStyle.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: relative;
+    height: calc(100vh - 100px); /* Full height minus footer height */
+    width: 100vw; /* Set the width to the full viewport width */
+    max-width: 100%; /* Prevent the width from exceeding 100% */
+    font-family: Montserrat, sans-serif;
+    min-width:800px;
+}
+
+.top {
+    margin-top: 100px;
+}
+
+.title {
+    margin-top: 120px;
+    font-size: 36px;
+    color: #092644;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+}
+
+.heading {
+    text-align: center;
+    color: #092644;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.spliceTop {
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.spliceBottom {
+    width: calc(var(--vw, 1vw) * 100);
+    object-fit: cover;
+    max-height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.main {
+    background-color: white;
+    margin-top: 70px;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    flex: 1;
+}
+
+.searchContainer {
+    justify-content: center;
+    justify-self: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Table container with scroll */
+.tableContainer {
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: auto;
+    max-height: 470px; /* Fixed height for the table container */
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+/* Table styling */
+.table {
+    width: 60%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #092644;
+    height: auto;
+}
+
+    .table th,
+    .table td {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table th {
+        background-color: #D1E1E0; /* Header background color */
+        position: sticky; /* Make the header sticky */
+        top: 0; /* Stick to the top */
+        z-index: 1;
+        padding: 10px;
+        border-bottom: 1px solid #ccc; /* Bottom border for header */
+    }
+
+    /* Background color of all even rows */
+    .table tr:nth-child(even) td {
+        background-color: #fff; /* White for even rows */
+    }
+
+    /* Background color of all odd rows */
+    .table tr:nth-child(odd) td {
+        background-color: #d6d6d6; /* Light grey for odd rows */
+    }
+
+.refreshButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px; /* or use var(--font-medium) if you want */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+    .refreshButton:hover {
+        color: #007bff; /* Change color on hover */
+        transform: scale(1.1); /* Slightly enlarge button */
+    }
+
+.table tr:hover {
+    background-color: #f9f9f9; /* Highlight row on hover */
+}
+
+.noDataMessage {
+    margin: 20px 20px; /* Add space above and below the message */
+    text-align: center; /* Center align the message text */
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column; /* Stack header elements vertically */
+    }
+
+    .title {
+        font-size: 20px; /* Adjust title size for smaller screens */
+    }
+
+    .subtitle {
+        font-size: 16px; /* Adjust subtitle size for smaller screens */
+    }
+}
+
+.refreshButton:focus {
+    outline: 2px solid #007bff; /* Focus outline for accessibility */
+    outline-offset: 2px;
+}

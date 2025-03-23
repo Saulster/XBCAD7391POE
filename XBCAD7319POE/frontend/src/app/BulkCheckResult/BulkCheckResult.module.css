@@ -1,0 +1,97 @@
+/* Container styling */
+.container {
+    margin-top: 150px;
+    padding: 20px;
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Header styling */
+.header {
+    margin-bottom: 100px;
+    font-size: 28px;
+    color: #000;
+    font-weight: bolder;
+}
+
+/* Content layout */
+.content {
+    display: flex;
+    gap: 20px;
+    max-width: 80%;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Table section styling */
+.tableSection {
+    flex: 1;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 500px; /* Fixed height for the table section */
+}
+
+/* Table styling */
+.table {
+    width: 90%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .table th, .table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        width: 50%;
+    }
+
+    .table th {
+        background-color: #D1E1E0;
+        font-weight: bold;
+    }
+
+/* Row styles */
+.rowEven {
+    background-color: #fff;
+}
+
+.rowOdd {
+    background-color: #d6d6d6;
+}
+
+/* Options section styling */
+.optionsSection {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #d6d6d6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 26px;
+    color: #092644;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+.button {
+    background-color: #007bff;
+    color: white;
+    height: 50px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+    .button:hover {
+        background-color: #0056b3;
+    }

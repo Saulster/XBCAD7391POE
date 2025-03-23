@@ -1,0 +1,179 @@
+/* Home.module.css */
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: calc(100vh - 100px); /* Full height minus footer height */
+    width: 100vw; /* Set the width to the full viewport width */
+    max-width: 100%; /* Prevent the width from exceeding 100% */
+    overflow: hidden;
+    justify-content: space-between; /* Spreads content to push the image to the bottom */
+    font-family: Montserrat, sans-serif;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dynamic columns based on available space */
+    gap: 1vw; /* Space between grid items */
+    padding: 5% 2%; /* Use percentage padding for responsiveness */
+    margin-top: 1%; /* Space above the container */
+    background-color: #fff;
+    flex: 1; /* Allows the container to grow and fill available space */
+    justify-items: center; /* Center items horizontally within grid cells */
+    align-content: start; /* Align content at the start of the container */
+    box-sizing: border-box; /* Include padding and border in the height */
+}
+
+    /* Ensures the fifth card appears below the first card */
+    .container > .card:nth-child(5) {
+        grid-column: 1 / 2; /* Span across both columns for the fifth card */
+    }
+
+/* Styles for individual cards */
+.card {
+    background-color: #fff;
+    width: 50%; /* Set width to 100% to fill the grid cell */
+    max-width: 90%; /* Remove max-width limit to allow full flexibility */
+    border-radius: 8px;
+    padding: 2%; /* Use percentage padding for responsive design */
+    height: auto; /* Allow height to adjust based on content */
+    min-height: 10%; /* Maintain a minimum height for the cards */
+    max-height: 100%;
+    box-shadow: 0 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.cardIcon {
+    max-width: 2vw; /* Use viewport width for responsive sizing */
+    max-height: 2vw; /* Maintain aspect ratio */
+}
+
+.cardTitle {
+    font-size: 1.7rem; /* Base size for title */
+    font-weight: bold;
+    color: #000;
+    margin: 10px 0;
+}
+
+.cardDescription {
+    font-size: 1rem;
+    color: #58595B;
+}
+
+.cardButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Button styles */
+.SSSC {
+    background-color: #fff;
+    border: 2px solid #092644;
+    color: #092644;
+}
+
+    .SSSC:hover {
+        background-color: #092644; /* Change background color on hover */
+        color: #fff; /* Change text color on hover */
+    }
+
+.BSSC {
+    background-color: #fff;
+    border: 2px solid #EF6551;
+    color: #EF6551;
+}
+
+    .BSSC:hover {
+        background-color: #EF6551; /* Change background color on hover */
+        color: #fff; /* Change text color on hover */
+    }
+
+.AD {
+    background-color: #fff;
+    border: 2px solid #41b4e0;
+    color: #41b4e0;
+}
+
+    .AD:hover {
+        background-color: #41b4e0; /* Change background color on hover */
+        color: #fff; /* Change text color on hover */
+    }
+
+.BCH {
+    background-color: #fff;
+    border: 2px solid #bcd631;
+    color: #bcd631;
+}
+
+    .BCH:hover {
+        background-color: #96ab27; /* Change background color on hover */
+        color: #fff; /* Change text color on hover */
+    }
+
+.SSR {
+    background-color: #fff;
+    border: 2px solid #fec900;
+    color: #fec900;
+}
+
+    .SSR:hover {
+        background-color: #cba100; /* Change background color on hover */
+        color: #fff; /* Change text color on hover */
+    }
+
+/* Image at the bottom */
+.bottomImage {
+    width: 100%;
+    max-height: 70px; /* Optional: Adjust as needed */
+    object-fit: cover; /* Makes sure the image covers the available space without distortion */
+    margin-top: auto; /* Pushes the image to the bottom */
+    position: fixed; /* Make the footer fixed at the bottom */
+    bottom: 0; /* Position it at the bottom of the page */
+    left: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Make it one column on smaller screens */
+        padding: 5% 2%; /* Adjust padding for smaller screens */
+    }
+
+    .card {
+        padding: 5%; /* Adjust padding for cards on small screens */
+    }
+
+    .cardTitle {
+        font-size: 1.5rem; /* Smaller title on mobile */
+    }
+
+    .cardDescription {
+        font-size: 0.9rem; /* Smaller description on mobile */
+    }
+
+    .cardButton {
+        padding: 8px 16px; /* Adjust button padding for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 3% 1%; /* Further adjust padding for very small screens */
+    }
+
+    .card {
+        padding: 5%; /* Adjust padding for cards on small screens */
+    }
+
+    .cardIcon {
+        max-width: 20vw; /* Smaller icon on mobile */
+        max-height: 20vw;
+    }
+}

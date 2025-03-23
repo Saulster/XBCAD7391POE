@@ -1,0 +1,55 @@
+.searchBar {
+    margin-bottom: 20px; /* Space below the search bar */
+    display: flex; /* Flexbox layout for input and buttons */
+    align-items: center; /* Center items vertically */
+    font-family: Montserrat, sans-serif;
+}
+
+    .searchBar input {
+        padding: 10px; /* Inner spacing for input */
+        border-radius: 4px; /* Rounded corners */
+        border: 1px solid #ccc; /* Light grey border */
+        width: 400px; /* Set width of the input field */
+        font-size: 16px; /* Font size for input text */
+        transition: border-color 0.3s; /* Smooth border color transition */
+        background-color: #fff; /* White background */
+        color: #000; /* Black text */
+    }
+
+        .searchBar input:focus {
+            outline: none; /* Remove default focus outline */
+            border-color: #41B4E0; /* Change border color on focus */
+        }
+
+    .searchBar button {
+        margin-left: 10px; /* Space between input and button */
+        padding: 10px 15px; /* Inner spacing for button */
+        border-radius: 4px; /* Rounded corners */
+        background-color: #41B4E0; /* Button background color */
+        color: white; /* Button text color */
+        border: none; /* Remove default border */
+        cursor: pointer; /* Pointer cursor on hover */
+        font-size: 16px; /* Font size for button text */
+        transition: background-color 0.3s; /* Smooth background color transition */
+    }
+
+        .searchBar button:hover {
+            background-color: #007bff; /* Change button color on hover */
+        }
+
+/* Clear button styles */
+.clearButton {
+    margin-left: 10px; /* Space between buttons */
+    padding: 10px 15px; /* Inner spacing for clear button */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #ff4757; /* Red background color */
+    color: white; /* Clear button text color */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button text */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+    .clearButton:hover {
+        background-color: #c0392b; /* Darker shade on hover */
+    }

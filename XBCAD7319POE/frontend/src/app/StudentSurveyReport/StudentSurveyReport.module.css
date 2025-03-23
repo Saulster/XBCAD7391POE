@@ -1,0 +1,168 @@
+/* Container for the entire page */
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f9fb;
+    height: calc(100vh - 100px); /* Full height minus footer height */
+    font-family: Montserrat, sans-serif;
+    overflow: hidden; /* Prevent scrolling on the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Heading for the report */
+.heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Montserrat;
+}
+
+/* New filter container styling */
+.filterContainer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    gap: 16px; /* Space between dropdowns */
+    margin-bottom: 40px; /* Space below filter container */
+    font-family: Montserrat;
+    width: 100%;
+}
+
+/* Label styling */
+.label {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Montserrat;
+}
+
+/* Dropdown styling */
+.dropdown {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: Montserrat;
+}
+
+/* Adjusted content area containing table and chart */
+.tableChartContainer {
+    display: flex;
+    gap: 50px; /* Space between table and chart */
+    width: 100%;
+    font-family: Montserrat;
+    height: 100%;
+}
+
+/* Full table section */
+.fullTableSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Table section */
+.tableSection {
+    overflow-y: auto; /* Enable vertical scrolling for the table */
+    height: 600px; /* Fixed height for the table container */
+    width: 80%;
+    display: flex;
+    flex-direction: column; /* Stack contents vertically */
+    align-items: center; /* Center align items */
+    text-align: center;
+    font-family: Montserrat;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #092644;
+    font-family: Montserrat;
+}
+
+    .table th,
+    .table td {
+        padding: 12px;
+        text-align: left;
+        font-family: Montserrat;
+    }
+
+    .table th {
+        background-color: #d2f1fa;
+        font-weight: bold;
+        font-family: Montserrat;
+    }
+
+.rowEven {
+    background-color: #f2fcff;
+}
+
+.rowOdd {
+    background-color: #d2f1fa;
+}
+
+/* Chart section */
+.chartSection {
+    display: flex; /* Use flex to arrange items horizontally */
+    width: 100%; /* Take full width of the section */
+}
+
+/* Container for both pie charts */
+.pieChartsContainer {
+    display: flex;
+    gap: 60px; /* Space between charts */
+    width: auto; /* Remove max-width to allow full flexibility */
+    position: absolute;
+    right: 200px;
+}
+
+.ChartItself {
+    text-align: center;
+    position: fixed;
+    right: 150px;
+    top: 300px;
+    height: 400px;
+    width: 400px;
+    gap: 50px
+}
+
+/* Styling for the first pie chart */
+.firstPieChart {
+    position: fixed;
+    right: 150px;
+    top: 350px;
+    height: 400px;
+    width: 400px;
+}
+
+/* Styling for the second pie chart */
+.secondPieChart {
+    position: fixed;
+    right: 600px;
+    top: 300px;
+    height: 400px;
+    width: 400px;
+}
+
+/* Stats section */
+.stats {
+    margin-top: 24px;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.statsHeader {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-family: Montserrat;
+}
+
+.statsText {
+    font-size: 16px;
+    font-family: Montserrat;
+}

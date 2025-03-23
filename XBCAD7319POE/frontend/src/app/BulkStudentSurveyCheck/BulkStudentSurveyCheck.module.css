@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    position: relative;
+    overflow: hidden;
+    min-height: 750px;
+    font-family: Montserrat, sans-serif;
+    background-color: #f3f4f6;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    background-color: #f3f4f6; /* Optional fallback color */
+    position: relative;
+    overflow: hidden;
+}
+
+.backgroundImage {
+    margin-top: 92px; /* Adjust margin to create space */
+    height: auto; /* Ensure it's enough to display content */
+    min-height: 300px;
+    max-height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: fixed; /* Changed from fixed to relative */
+}
+
+    .backgroundImage::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../../public/P3Splice.png') center / cover no-repeat;
+        opacity: 0.4; /* Set the desired opacity for the background */
+        z-index: -1; /* Make sure it stays behind the text */
+    }
+
+.headingContainer {
+    margin-top: 50px;
+    margin-left: 10%; /* Keep the left margin */
+}
+
+.title, .subtitle, .instructions, .downloadButton {
+    color: #092644;
+    z-index: 1; /* Ensure the text stays above the background */
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 36px; /* Title font size */
+}
+
+.subtitle {
+    font-size: 30px; /* Subtitle font size */
+}
+
+.instructions {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 24px; /* Instructions font size */
+}
+
+.uploadSection {
+    width: 100%;
+    max-width: 50%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute; /* Changed from fixed to relative */
+    top: 55%;
+    bottom: 50%;
+}
+
+.csvHeading {
+    font-weight: bolder; /* Bold for emphasis */
+    font-size: 30px; /* Size for CSV heading */
+    color: #000; /* Heading color */
+}
+
+.fileInput {
+    border: 1px solid #ccc;
+    padding: 5px; /* Padding remains unchanged */
+    border-radius: 5px;
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    font-size: 24px;
+    width: 600px;
+}
+
+.nextButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 150px;
+    font-size: 20px;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.fileInputWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+

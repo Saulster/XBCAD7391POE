@@ -1,0 +1,79 @@
+.pageContainer {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/XBCADBAckground.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+/* Styles for the main login container */
+.loginContainer {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    text-align: center;
+    border: 2px solid #092644; /* Dark Blue border for the container */
+}
+
+    /* Header styling */
+    .loginContainer h2 {
+        font-size: 48px;
+        color: #41B4E0; /* Feenix Blue */
+        margin-bottom: 20px;
+    }
+
+    /* Style labels */
+    .loginContainer label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        color: #58595B; /* Grey */
+        font-size: 16px;
+    }
+
+    /* Style input fields */
+    .loginContainer input[type="text"],
+    .loginContainer input[type="password"] {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #58595B; /* Grey border */
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: #D1E1E0; /* Sky Blue background for inputs */
+        color: #092644; /* Dark Blue text */
+    }
+
+    /* Style the login button */
+    .loginContainer button {
+        width: 100%;
+        padding: 10px;
+        background-color: #41B4E0; /* Feenix Blue */
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        /* Hover effect for the button */
+        .loginContainer button:hover {
+            background-color: #092644; /* Dark Blue on hover */
+        }
+
+    /* Optional extra styling: Add focus effect for input fields */
+    .loginContainer input:focus {
+        border: 2px solid #BCD631; /* Funky Green border on focus */
+        outline: none;
+    }

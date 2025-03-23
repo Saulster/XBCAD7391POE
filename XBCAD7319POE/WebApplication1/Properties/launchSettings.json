@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:27413",
+      "sslPort": 44321
+    }
+  },
+  "profiles": {
+    "WebApplication1": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:3003;http://localhost:5007",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "AWS_ACCESS_KEY": "AKIA2AUOOT42KNASA2GJ",
+        "AWS_SECRET_KEY": "GET NEW KEY",
+        "AWS_REGION": "eu-north-1",
+        "AWS_BucketName": "xbcadbucket",
+        "DB_ENDPOINT": "postgres.cho8omq0ox0z.eu-north-1.rds.amazonaws.com",
+        "DB_USERNAME": "postgres",
+        "DB_PASSWORD": "postgres",
+        "DB_NAME": "postgres_init",
+        "SURVEY_ID": "415690541",
+        "SURVEY_ACCESS": "GET NEW KEY",,
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "NextJs": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\nodejs\\npm.cmd",
+      "workingDirectory": "$(SolutionDir)\\YourNextJsProject",
+      "commandLineArgs": "run dev"
+    }
+  }
+}

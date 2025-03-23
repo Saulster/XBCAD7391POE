@@ -1,0 +1,114 @@
+/* Page container */
+.pageContainer {
+    height: calc(100vh - 200px);
+    background-color: #ffffff;
+    min-height: 930px;
+    min-width: 510px;
+    padding: 20px;
+    font-family: Montserrat, sans-serif;
+}
+
+/* Title styling */
+.title {
+    text-align: center;
+    font-size: 36px;
+    color: #092644; /* Dark Blue */
+    margin: 100px 0 40px 0; /* Adjust height of heading */
+}
+
+/* Table container styling */
+.tableContainer {
+    width: 80%;
+    height: 600px; /* Fixed height for the table container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin: auto; /* Center the table container */
+    border: 1px solid #ddd; /* Optional: Add a border around the container */
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    text-align: center;
+}
+
+.loadingMessage,
+.errorMessage {
+    font-size: 20px; /* Adjust font size as needed */
+    color: #000; /* Color for the messages */
+}
+
+/* Optional styling for the no-data-message */
+.no-data-message {
+    font-size: 20px; /* Adjust font size */
+    color: #888; /* Color for no data message */
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+    .table th, .table td {
+        padding: 15px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+    }
+
+    .table th {
+        background-color: #D1E1E0; /* Sky Blue */
+        color: black;
+        position: sticky; /* Make the header sticky */
+        top: 0;
+    }
+
+    .table td {
+        background-color: white;
+        color: black;
+    }
+
+    /* Background color of all even rows */
+    .table tr:nth-child(even) td {
+        background-color: #fff; /* White for even rows */
+    }
+
+    /* Background color of all odd rows */
+    .table tr:nth-child(odd) td {
+        background-color: #d6d6d6; /* Light Grey for odd rows */
+    }
+
+.bottomImage {
+    width: 100%;
+    max-height: 70px; /* Optional: Adjust as needed */
+    object-fit: cover; /* Makes sure the image covers the available space without distortion */
+    margin-top: auto; /* Pushes the image to the bottom */
+    position: fixed; /* Make the footer fixed at the bottom */
+    bottom: 0; /* Position it at the bottom of the page */
+    left: 0;
+}
+
+/* Styling for the Download and Recheck icons */
+.actionButton {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+}
+
+.downloadButton {
+    color: #EF6551; /* Coral for download */
+}
+
+.recheckButton {
+    color: black; /* Change refresh btn to black so it is visible */
+}
+
+/* Hover effect for the action buttons */
+.actionButton:hover {
+    opacity: 0.7;
+}
+
+/* Optional: Styling for responsive design */
+@media (max-width: 768px) {
+    .tableContainer {
+        width: 100%; /* Full width on smaller screens */
+    }
+}

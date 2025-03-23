@@ -1,0 +1,76 @@
+/* Container for the whole component */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Blue confirmation box */
+.confirmBox {
+    background-color: #41B4E0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin-bottom: 30px; /* Space between the box and buttons */
+    box-shadow: 0 4px 8px #21A9DE;
+    text-align: center;
+    align-items: center;
+}
+
+/* Message styles */
+.message {
+    font-size: 1.25rem;
+    color: #FFF;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+
+/* Buttons container (outside the blue box) */
+.buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ensure buttons use the full width available */
+    max-width: 500px; /* Keep the buttons aligned with the box width */
+    padding: 0 20px; /* Space the buttons from the edges */
+}
+
+/* Styles for the "Continue" button */
+.button {
+    width: 120px; /* Fixed width for the "Continue" button */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #21A9DE;
+    color: white;
+    font-size: 1.2rem;
+}
+
+    /* Hover effect for "Continue" */
+    .button:hover {
+        background-color: #1e98c8;
+    }
+
+/* Styles for the "Cancel" button */
+.cancelButton {
+    width: 120px; /* Fixed width for the "Cancel" button */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #CB0D0D; /* Red background */
+    color: white;
+    font-size: 1.2rem;
+    ;
+}
+
+    /* Hover effect for "Cancel" */
+    .cancelButton:hover {
+        background-color: #a80b0b;
+    }

@@ -1,0 +1,118 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px); /* Adjust height dynamically */
+    position: relative;
+    overflow: hidden;
+    font-family: Montserrat, sans-serif;
+    background-color: #f3f4f6;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #f3f4f6; /* Optional fallback color */
+    position: relative;
+    overflow: hidden;
+}
+
+.backgroundImage {
+    margin-top: 100px;
+    height: 40vh; /* Dynamic height */
+    width: 100vw; /* Full width of viewport */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+    .backgroundImage::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../../public/Pattern 2.png') center / cover no-repeat;
+        opacity: 0.4; /* Set the desired opacity for the background */
+        z-index: -1; /* Make sure it stays behind the text */
+    }
+
+.heading {
+    position: fixed; /* To stay above the pseudo-element */
+    margin-top: 15vh; /* Dynamic margin */
+    margin-left: 5vw; /* Dynamic margin */
+    color: #000;
+    font-weight: bolder;
+    font-size: 36px; /* Responsive font size */
+    text-align: left;
+    z-index: 1; /* Ensure the text stays above the background */
+}
+
+.formContainer {
+    background-color: #f3f4f6;
+    margin-top: 35vh; /* Dynamic margin */
+    margin-left: 5vw; /* Dynamic margin */
+    width: 100%; /* Full width with a maximum limit */
+    max-width: 500px;
+    height: auto; /* Allow height to adjust based on content */
+    text-align: left;
+    z-index: 1;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #f3f4f6;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width of the container */
+    background-color: #f3f4f6;
+}
+
+.label {
+    font-size: 20px; /* Responsive font size */
+    margin-bottom: 15px;
+}
+
+.input {
+    padding: 1vh; /* Dynamic padding */
+    border: 1px solid #d1d5db;
+    text-indent: 10px;
+    border-radius: 4px;
+    font-size: 20px; /* Responsive font size */
+    margin-bottom: 15px;
+    width: 600px;
+}
+
+    .input:focus {
+        border-color: #092644; /* Change this to your desired focus color */
+        outline: auto; /* Remove default outline (optional) */
+    }
+
+.submitButton {
+    background-color: #41B4E0;
+    color: white;
+    padding: 1vh; /* Dynamic padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px; /* Responsive font size */
+    width: 100px; /* Fixed width */
+    text-align: center;
+}
+
+    .submitButton:hover {
+        background-color: #3ba2ca;
+    }
